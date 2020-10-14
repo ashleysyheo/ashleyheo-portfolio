@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from 'react-router-dom';
+import Heading from './components/Heading';
+import IndexSort from './components/IndexSort';
+import CraigslistPage from './components/project_page/CraigslistPage';
+import AnytimePage from './components/project_page/AnytimePage';
+import FcBarcelonaPage from './components/project_page/FcBarcelonaPage';
+import './App.scss';
+import './font.css';
+import FootPage from './components/project_page/FootPage';
+import DesignPage from './components/project_page/DesignPage';
+import Information from './components/Information';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div>
+            <Heading />
+            <Route path='/' component={ IndexSort } exact={ true } />
+            <Route path='/information' component={ Information } />
+            <Route path='/craigslist-housing' component={ CraigslistPage } />
+            <Route path='/anytime' component={ AnytimePage } />
+            <Route path='/fc-barcelona' component={ FcBarcelonaPage } />
+            <Route path='/foot' component={ FootPage } />
+            <Route path='/design-a-principle' component={ DesignPage } />
+        </div>
+    )
 }
 
 export default App;

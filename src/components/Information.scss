@@ -1,0 +1,57 @@
+@import '../App.scss';
+
+.information-container {
+    position: relative;
+    top: 15rem;
+    margin: 0 2.5rem;
+    font-size: 3rem;
+    width: 100rem;
+
+    @include respond(phone) { 
+        top: 20rem;
+        width: 65rem;
+        font-size: 4.5rem;
+        line-height: 5.5rem;
+    }; 
+
+    .information-text {
+        margin-bottom: 3rem;
+    }
+
+    .information-links {
+        display: flex;
+        width: 90rem;
+        margin-top: 7rem;
+        justify-content: space-between;
+        
+        @include respond(phone) { 
+            width: 65rem;
+            font-size: 3rem;
+        }; 
+
+        .underline:hover a:before, .underline:hover a:after {
+            width: 100%;
+            opacity: 1;
+            color: #0000ff;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.25s ease-in-out;
+            position: relative;
+        }
+          
+        a:before, a:after {
+            content: "";
+            position: absolute;
+            bottom: -7px;
+            width: 0;
+            height: 2px;
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            background-color: black;
+            left: 0;
+        }          
+    }
+}
+

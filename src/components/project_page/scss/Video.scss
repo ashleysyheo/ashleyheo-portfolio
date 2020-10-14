@@ -1,0 +1,28 @@
+.video {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60rem;
+    outline: none;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 6rem;
+
+    .button {
+        font-size: 4rem;
+
+        &:first-child {
+            margin-right: 2rem;
+        }
+    }
+
+    .active {
+        color: #333333;
+    }
+    .inactive {
+        color: #828282;
+    }
+}
+

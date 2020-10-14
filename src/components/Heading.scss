@@ -1,0 +1,44 @@
+@import "../App.scss";
+
+.header-container {
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    z-index: 1000;
+}
+
+.header-menu {
+    position: relative;
+    font-weight: 500; 
+    width: 100vw;
+    padding: 2rem 2.5rem; 
+    background-color: white;
+
+    @include respond(phone) { 
+        padding: 4rem 2.5rem; 
+        font-size: 3.5rem;
+    }
+
+    & .name {
+        display: inline-block;
+    }
+
+    & .information {
+        display: inline-block;
+        position: absolute;
+        right: 2.5rem;
+        cursor: pointer;
+    }
+
+    a:hover {
+        filter: blur(2px);
+    }
+
+}
+
+.horizontal-line {
+    border-bottom: 1px solid $black;
+}
+

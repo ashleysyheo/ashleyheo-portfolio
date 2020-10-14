@@ -1,0 +1,175 @@
+@import "../../../App.scss";
+
+.main {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 14.5rem;
+    width: 90rem;
+
+    @include respond(phone) { 
+        top: 17.5rem;
+        width: 70rem;
+    }   
+}
+
+.title-container {
+    margin-bottom: 3.5rem;
+
+    .year {
+        font-weight: 600;
+        padding-left: 3px;
+
+        @include respond(phone) { 
+            font-size: 3rem;
+        }   
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 5rem;
+
+        @include respond(phone) { 
+            font-size: 7rem;
+        }
+    }
+}
+
+.cover-image {
+    width: 90rem;
+    margin-bottom: 4rem;
+
+    @include respond(phone) { 
+        width: 70rem;
+    }
+}
+
+.heading1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 4rem;
+
+    @include respond(phone) { 
+        font-size: 5rem;
+    }
+}
+
+.craigslist {
+    color: #8A12C3;
+}
+
+.anytime {
+    color: #BB1919;
+}
+
+.heading2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+
+    @include respond(phone) { 
+        font-size: 4.2rem;
+        margin-bottom: 5.5rem;
+    }
+}
+
+.content-container {
+    position: relative;
+    margin-bottom: 7rem;
+
+    &--last {
+        margin-bottom: 10rem;
+
+        @include respond(phone) { 
+            margin-bottom: 15rem;
+        }
+    }
+
+    @include respond(phone) { 
+        margin-bottom: 10rem;
+    }  
+}
+
+.text {
+    margin-bottom: 2.5rem;
+    line-height: 2.6rem;
+
+    @include respond(phone) { 
+        font-size: 3.3rem;
+        line-height: 4.5rem;
+    }  
+
+    .arrow {
+        position: relative;
+        top: 2px;
+    }
+
+    &--big {
+        font-size: 2.2rem;
+
+        @include respond(phone) { 
+            font-size: 3.7rem;
+        }  
+    }
+
+    
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+.img {
+    width: 90rem;
+
+    @include respond(phone) { 
+        width: 70rem;
+    }
+
+    &--small {
+        position: relative;
+        width: 70rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.margin-top {
+    margin-top: 3.5rem;
+
+    @include respond(phone) { 
+        margin-top: 5.5rem;
+    }
+}
+
+.margin-bottom {
+    margin-bottom: 3rem;
+
+    @include respond(phone) { 
+        margin-bottom: 4rem;
+    }
+}
+
+.margin-bottom--small {
+    margin-bottom: 2rem;
+
+    @include respond(phone) { 
+        margin-bottom: 3rem;
+    }
+}
+
+.margin-bottom--big {
+    padding-bottom: 15rem;
+}
+
+@include respond(phone) { 
+    .label {
+        font-size: 3rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+} 

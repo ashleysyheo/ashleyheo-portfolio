@@ -1,0 +1,78 @@
+@import "../../../App.scss";
+
+.footer-container {
+    position: relative;
+    bottom: -7.5rem;
+    width: 100vw;
+    border-top: 1px solid black;
+    padding: 0 2.5rem;
+    margin-bottom: 2rem;
+
+    .project-links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+        .projects {
+            cursor: pointer;
+            display: flex;
+            width: 65rem;
+            justify-content: space-between;
+
+            @include respond(tab-land) { 
+                width: 50rem;
+            }   
+            
+            @include respond(phone) { 
+                width: 35rem;
+            }         
+    
+    
+            .project {
+                display: inline-block;
+                font-size: 3rem; 
+                font-weight: 600;
+            }
+
+            .title {
+                position: relative;
+                top: 3rem;
+            }
+        
+            .arrow {
+                font-size: 4rem;
+            }
+
+            svg {
+                height: 10rem;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        .footer-block {
+            display: inline-block;
+            font-size: 2rem;
+
+            a {
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 2.5rem;
+                }
+            }
+        }
+
+        .top {
+            cursor: pointer;
+        }
+
+        .copyright {
+            cursor: default;
+        }
+    }
+}
+
+
