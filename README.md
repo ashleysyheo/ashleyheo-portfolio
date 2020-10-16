@@ -15,7 +15,7 @@ You will need node and npm installed globally on your machine.
 `npm start`
 
 ### Visit App:
-localhost:3000/
+[localhost:3000/]
 
 ## Reflection 
 This was a short project and the first time using React to create a project. So in terms of building this project, I mainly focused on getting familiar with the React framework and trying out different options. 
