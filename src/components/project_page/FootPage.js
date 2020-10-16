@@ -2,7 +2,7 @@ import React from 'react';
 import ProgressiveImage from 'react-progressive-image';
 import './scss/Project.scss';
 import Video from './Video';
-import prototype from './assets/foot/prototype.mp4';
+import prototype from './assets/foot/prototype.webm';
 import Footer from './Footer';
 
 

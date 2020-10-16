@@ -20,7 +20,7 @@ const Video = ({ video }) => {
     return (
         <>
             <video muted ref={ videoRef } className='video'>
-                <source src={ video } type="video/mp4" />
+                <source src={ video } type="video/webm" />
             </video>
             
             <div className='buttons'>
