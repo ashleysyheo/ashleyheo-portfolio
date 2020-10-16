@@ -2,7 +2,7 @@ import React from 'react';
 import ProgressiveImage from 'react-progressive-image';
 import './scss/Project.scss';
 import Video from './Video';
-import prototype from './assets/anytime/prototype.mov';
+import prototype from './assets/anytime/prototype.mp4';
 import { MdArrowForward } from 'react-icons/md';
 import Footer from './Footer';
 

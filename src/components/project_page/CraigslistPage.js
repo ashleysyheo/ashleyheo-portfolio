@@ -1,7 +1,7 @@
 import React from 'react';
 import './scss/Project.scss';
 import Video from './Video';
-import prototype from './assets/craigslist-housing/prototype.mov';
+import prototype from './assets/craigslist-housing/prototype.mp4';
 import ProgressiveImage from 'react-progressive-image';
 import Footer from './Footer';
 
