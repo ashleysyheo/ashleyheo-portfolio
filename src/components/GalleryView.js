@@ -15,13 +15,13 @@ const GalleryView = ({ works }) => {
                         {
                             block.map(idx => {
                                 let work = works[idx];
-                                const images = require.context('../images', true);
-                                const largeImg = images('./' + work.largeImg);
-                                const smallImg = images('./' + work.smallImg);
-                                console.log(largeImg, smallImg);
+                                // const images = require.context('../images', true);
+                                // const largeImg = images('./' + work.largeImg);
+                                // const smallImg = images('./' + work.smallImg);
+                                // console.log(largeImg, smallImg);
                                 let block = (
                                     <div className='project' key={ idx }>
-                                        <ProgressiveImage src={ largeImg } placeholder={ smallImg }>
+                                        <ProgressiveImage src={ work.largeImg } placeholder={ work.smallImg }>
                                             {(src, loading) => <img className='project-image' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt={ work.title } />}
                                         </ProgressiveImage>
                                         <div className='information'>
