@@ -19,7 +19,9 @@ const Video = ({ video }) => {
 
     return (
         <>
-            <video muted ref={ videoRef } src={ video } className='video' />
+            <video muted ref={ videoRef } className='video'>
+                <source src={ video } type="video/mp4" />
+            </video>
             
             <div className='buttons'>
                 <MdPlayArrow onClick={ startVideo } className={`button ${videoState ? 'active' : 'inactive'}`}/>
