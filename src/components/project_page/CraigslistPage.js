@@ -7,7 +7,6 @@ import Footer from './Footer';
 
 
 const CraigslistPage = () => {
-    const images = require.context('./assets/craigslist-housing', true);
     return (
         <div>
             <div className='main' id="main">
@@ -15,7 +14,7 @@ const CraigslistPage = () => {
                     <div className='year'>2020</div>
                     <div className='title'>Craigslist Housing</div>
                 </div>
-                <ProgressiveImage src={ images('./cover.png') } placeholder={ images('./cover-small.png') }>
+                <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/cover.png' placeholder="https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/cover-small.png">
                     {(src, loading) => <img className='cover-image' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Craigslist Housing App' />}
                 </ProgressiveImage>
 
@@ -75,17 +74,17 @@ const CraigslistPage = () => {
                     <p className='text'>
                         Based on user interviews, I created 2 personas with highlights on goal differences. From interviews, I observed that Craigslist Housing is used to do a preliminary search on the desired location they want to move to. I created a primary persona which as a young adult looking for a new house when relocating to a new country for work, and a secondary person, who is a college student looking for different housing options. 
                     </p>
-                    <ProgressiveImage src={ images('./persona1.png') } placeholder={ images('./persona1-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona1.png' placeholder="https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona1-small.png">
                         {(src, loading) => <img className='img margin-bottom' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Primary Persona' />}
                     </ProgressiveImage>
-                    <ProgressiveImage src={ images('./persona2.png') } placeholder={ images('./persona2-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona2-small.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona2-small.png'>
                         {(src, loading) => <img className='img' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Secondary Persona' />}
                     </ProgressiveImage>
                 </div>
                     
                 <div className='heading2'>Journey Map</div>
                 <div className='content-container content-container--last'>
-                    <ProgressiveImage src={ images('./journey-map.png') } placeholder={ images('./journey-map-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/journey-map-small.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/journey-map-small.png'>
                         {(src, loading) => <img className='img--small' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Journey Map' />}
                     </ProgressiveImage>
                 </div>
@@ -117,21 +116,21 @@ const CraigslistPage = () => {
 
                 <div className='heading2'>Site Map</div>
                 <div className='content-container'>
-                    <ProgressiveImage src={ images('./site-map.png') } placeholder={ images('./site-map-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/site-map.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/site-map-small.png'>
                         {(src, loading) => <img className='img' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Site Map' />}
                     </ProgressiveImage>
                 </div>
 
                 <div className='heading2'>User Flow</div>
                 <div className='content-container'>
-                    <ProgressiveImage src={ images('./user-flow.png') } placeholder={ images('./user-flow-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/user-flow.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/user-flow-small.png'>
                         {(src, loading) => <img className='img--small' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='User Flow' />}
                     </ProgressiveImage>
                 </div>
 
                 <div className='heading2'>Wireframes</div>
                 <div className='content-container'>
-                    <ProgressiveImage src={ images('./wireframe.png') } placeholder={ images('./wireframe-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/wireframe.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/wireframe-small.png'>
                         {(src, loading) => <img className='img' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Wireframe' />}
                     </ProgressiveImage>
                 </div>
@@ -143,7 +142,7 @@ const CraigslistPage = () => {
                         characteristics of Craigslist. To fit those requirements, I decided on using bright violet as the primary color and the 
                         system font (apple device: SF Pro display) as the typeface.
                     </div>
-                    <ProgressiveImage src={ images('./visual-design.png') } placeholder={ images('./visual-design-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/visual-design.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/visual-design-small.png'>
                         {(src, loading) => <img className='img margin-top' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Visual Design' />}
                     </ProgressiveImage>
                 </div>
