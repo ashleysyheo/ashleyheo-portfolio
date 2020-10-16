@@ -150,7 +150,7 @@ const CraigslistPage = () => {
 
                 <div className='heading1 craigslist margin-bottom'>03 Prototype</div> 
                 <div className='content-container'>
-                    <Video video={ prototype } />     
+                    <Video video={ "https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/prototype.mp4" } />     
                 </div>          
             </div>
             <Footer title={ "Craigslist Housing" } />
