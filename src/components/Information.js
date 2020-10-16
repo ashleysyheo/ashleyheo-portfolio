@@ -1,4 +1,5 @@
 import React from 'react';
+import resume from '../assets/resume.pdf';
 import './Information.scss';
 
 const Information = () => {
@@ -18,16 +19,22 @@ const Information = () => {
             </div>
             <div className='information-links'>
                 <span className='underline'>
-                    <a className='link resume' href="#">Resume</a>
+                    <a className='link resume' href={ resume } target='_blank' rel="noopener noreferrer">Resume</a>
                 </span>
                 <span className='underline'>
-                    <a className='link resume' href="https://www.linkedin.com/in/ashley-h-4b1832118/">LinkedIn</a>
+                    <a className='link resume' href="https://www.linkedin.com/in/ashley-h-4b1832118/" target='_blank' rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
                 </span>
                 <span className='underline'>
-                    <a className='link resume' href="https://www.behance.net/ashleysyheo">Behance</a>
+                    <a className='link resume' href="https://www.behance.net/ashleysyheo" target='_blank' rel="noopener noreferrer">
+                        Behance
+                    </a>
                 </span>
                 <span className='underline'>
-                    <a className='link resume' href="https://www.instagram.com/asshleyyh/">Instagram</a>
+                    <a className='link resume' href="https://github.com/ashleysyheo/" target='_blank' rel="noopener noreferrer">
+                        GitHub
+                    </a>
                 </span>
                 <span className='underline'>
                     <a className='link resume' href="mailto:ashleysyheo@gmail.com">Email</a>

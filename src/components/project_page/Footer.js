@@ -2,8 +2,8 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import WorkContext from '../../contexts/works';
 import './scss/Footer.scss';
-import { FiMail, FiInstagram} from 'react-icons/fi';
-import { FaLinkedinIn, FaBehance } from 'react-icons/fa';
+import { FiMail } from 'react-icons/fi';
+import { FaLinkedinIn, FaBehance, FaGithub } from 'react-icons/fa';
 import { RiArrowLeftLine, RiArrowRightLine } from "react-icons/ri";
 
 const Footer = ({ title }) => {
@@ -71,8 +71,8 @@ const Footer = ({ title }) => {
                     <a href='https://www.behance.net/ashleysyheo' target='_blank' rel="noopener noreferrer">
                         <FaBehance className='icon' />
                     </a>
-                    <a href='https://www.instagram.com/asshleyyh/' target='_blank' rel="noopener noreferrer">
-                        <FiInstagram className='icon' />
+                    <a href='https://github.com/ashleysyheo/' target='_blank' rel="noopener noreferrer">
+                        <FaGithub className='icon' />
                     </a>
                     <a href='mailto:ashleysyheo@gmail.com' target='_blank' rel="noopener noreferrer">
                         <FiMail className='icon' />
