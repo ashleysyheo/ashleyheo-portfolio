@@ -6,7 +6,6 @@ import CraigslistPage from './components/project_page/CraigslistPage';
 import AnytimePage from './components/project_page/AnytimePage';
 import FcBarcelonaPage from './components/project_page/FcBarcelonaPage';
 import './App.scss';
-import './font.css';
 import FootPage from './components/project_page/FootPage';
 import DesignPage from './components/project_page/DesignPage';
 import Information from './components/Information';
