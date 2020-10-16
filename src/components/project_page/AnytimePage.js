@@ -2,13 +2,11 @@ import React from 'react';
 import ProgressiveImage from 'react-progressive-image';
 import './scss/Project.scss';
 import Video from './Video';
-import prototype from './assets/anytime/prototype.mp4';
 import { MdArrowForward } from 'react-icons/md';
 import Footer from './Footer';
 
 
 const AnytimePage = () => {
-    const images = require.context('./assets/anytime', true);
     return (
         <div>
             <div className='main' id="main">
@@ -17,7 +15,7 @@ const AnytimePage = () => {
                     <div className='title'>Anytime</div>
                 </div> 
                 
-                <ProgressiveImage src={ images('./cover.png') } placeholder={ images('./cover-small.png') }>
+                <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/cover.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/cover-small.png'>
                     {(src, loading) => <img className='cover-image img--small' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Anytime App' />}
                 </ProgressiveImage>
 
@@ -94,7 +92,7 @@ const AnytimePage = () => {
                         you search for work Buildings people cannot find the Work Order link. Also, searching for Work Order shows no related result. 
                     </p>
 
-                    <ProgressiveImage src={ images('./current_website.png') } placeholder={ images('./current_website-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/current_website.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/current_website-small.png'>
                         {(src, loading) => <img className='img margin-bottom' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Current New School Facilities Maintenance Website' />}
                     </ProgressiveImage>
                     <p className='text'>
@@ -124,14 +122,14 @@ const AnytimePage = () => {
                         the main pages(work order list and calendar). The <span className='bold'>work order list</span> is set as the home page so that both the posters 
                         and maintenance workers have easy access to the active work orders. 
                     </p>
-                    <ProgressiveImage src={ images('./user-flow.png') } placeholder={ images('./user-flow-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/user-flow.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/user-flow-small.png'>
                         {(src, loading) => <img className='img--small margin-top' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='User Flow' />}
                     </ProgressiveImage>
                 </div>
 
                 <div className='heading2'>Wireframes</div>
                 <div className='content-container'>
-                    <ProgressiveImage src={ images('./wireframe.png') } placeholder={ images('./wireframe-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/wireframe.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/wireframe-small.png'>
                         {(src, loading) => <img className='img' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Wireframe' />}
                     </ProgressiveImage>
                 </div>
@@ -146,14 +144,14 @@ const AnytimePage = () => {
                         For visual design <span className='bold'>Anytime</span> is based on the New School identity, so I decided on using the New School Red. For typography, 
                         as this is informative, I used a neo-Grotesk typeface, Suisse Int’l, which is simple and neutral. 
                     </div>
-                    <ProgressiveImage src={ images('./visual-design.png') } placeholder={ images('./visual-design-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/visual-design.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/visual-design-small.png'>
                         {(src, loading) => <img className='img margin-top' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Visual Design' />}
                     </ProgressiveImage>
                 </div>
 
                 <div className='heading1 anytime margin-bottom'>03 Prototype</div> 
                 <div className='content-container'>
-                    <Video video={ prototype } />     
+                    <Video video={ 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/anytime/prototype.mp4' } />     
                 </div>          
             </div>
             <Footer title={ "Anytime" } />

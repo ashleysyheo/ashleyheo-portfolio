@@ -2,12 +2,10 @@ import React from 'react';
 import ProgressiveImage from 'react-progressive-image';
 import './scss/Project.scss';
 import Video from './Video';
-import prototype from './assets/foot/prototype.webm';
 import Footer from './Footer';
 
 
 const FootPage = () => {
-    const images = require.context('./assets/foot', true);
     return (
         <div>
             <div className='main' id="main">
@@ -15,7 +13,7 @@ const FootPage = () => {
                     <div className='year'>2019</div>
                     <div className='title'>Foot</div>
                 </div>
-                <ProgressiveImage src={ images('./cover.png') } placeholder={ images('./cover-small.png') }>
+                <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/cover.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/cover-small.png'>
                     {(src, loading) => <img className='cover-image' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Foot App' />}
                 </ProgressiveImage>
 
@@ -47,14 +45,14 @@ const FootPage = () => {
 
                 <div className='heading1'>User Flow</div>
                 <div className='content-container'>
-                    <ProgressiveImage src={ images('./site-map.png') } placeholder={ images('./site-map-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/site-map.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/site-map-small.png'>
                         {(src, loading) => <img className='img--small' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='User Flow' />}
                     </ProgressiveImage>
                 </div>
 
                 <div className='heading1'>Wireframes</div>
                 <div className='content-container'>
-                    <ProgressiveImage src={ images('./wireframe.png') } placeholder={ images('./wireframe-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/wireframe.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/wireframe-small.png'>
                         {(src, loading) => <img className='img--small' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Wireframe' />}
                     </ProgressiveImage>
                 </div>
@@ -66,14 +64,14 @@ const FootPage = () => {
                         To fit the requirements, a vivid green color and a neo-Grotesk typeface Suisse Int’l was mainly used around the app. For each team’s page, the 
                         team’s representative color was used (e.g. maroon for FC Barcelona). 
                     </p>
-                    <ProgressiveImage src={ images('./visual-design.png') } placeholder={ images('./visual-design-small.png') }>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/visual-design.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/visual-design-small.png'>
                         {(src, loading) => <img className='img margin-top' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Visual Design' />}
                     </ProgressiveImage>
                 </div>
 
                 <div className='heading1 margin-bottom'>Prototype</div> 
                 <div className='content-container'>
-                    <Video video={ prototype } />     
+                    <Video video={ 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/foot/prototype.mp4' } />     
                 </div>          
             </div>
             <Footer title={ "Foot" } />
