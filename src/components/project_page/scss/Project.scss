@@ -93,10 +93,11 @@
 .text {
     margin-bottom: 2.5rem;
     line-height: 2.6rem;
+    font-weight: normal;
 
     @include respond(phone) { 
-        font-size: 3.8rem;
-        line-height: 3.8rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
     }  
 
     .arrow {
