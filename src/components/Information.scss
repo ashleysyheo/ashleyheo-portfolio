@@ -7,11 +7,12 @@
     font-size: 3rem;
     width: 100rem;
 
-    @include respond(phone) { 
-        top: 20rem;
-        width: 65rem;
+    @include respond(phone) {
+        top: 13rem;
+        width: calc(100vw - 5rem);
         font-size: 4.5rem;
-        line-height: 5.5rem;
+        line-height: 3.8rem;
+        padding-bottom: 5rem;
     }; 
 
     .information-text {
@@ -25,15 +26,16 @@
         justify-content: space-between;
         
         @include respond(phone) { 
-            width: 65rem;
+            width: calc(100vw - 5rem);
+            margin-top: 5rem;
             font-size: 3rem;
         }; 
 
         .underline:hover a:before, .underline:hover a:after {
             width: 100%;
             opacity: 1;
-            color: #0000ff;
         }
+
         a {
             color: inherit;
             text-decoration: none;

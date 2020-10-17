@@ -66,19 +66,19 @@ $gray1: #333333;
 html {
     font-size: 62.5%;
 
-    @media only screen and (max-width: 1200px) { 
+    @include respond(tab-land) { 
         font-size: 56.25%; 
     } 
 
-    @media only screen and (max-width: 900px) { 
+    @include respond(tab-port) {
         font-size: 45%; 
     } 
 
-    @media only screen and (max-width: 600px) { 
+    @include respond(phone) {
         font-size: 30%; 
     } 
 
-    @media screen and (min-width: 1800px) {
+    @include respond(big-desktop) {
         font-size: 75%;
     } 
 }
