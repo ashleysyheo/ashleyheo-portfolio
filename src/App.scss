@@ -55,7 +55,6 @@ $gray1: #333333;
     @if $breakpoint == big-desktop {
         @media screen and (min-width: 1800px) { @content }; // 1800px
     }
-    
 }
 
 *, *::after, *::before {
@@ -67,19 +66,19 @@ $gray1: #333333;
 html {
     font-size: 62.5%;
 
-    @include respond(tab-land) { 
+    @media only screen and (max-width: 1200px) { 
         font-size: 56.25%; 
     } 
 
-    @include respond(tab-port) { 
+    @media only screen and (max-width: 900px) { 
         font-size: 45%; 
     } 
 
-    @include respond(phone) { 
+    @media only screen and (max-width: 600px) { 
         font-size: 30%; 
     } 
 
-    @include respond(big-desktop) {
+    @media screen and (min-width: 1800px) {
         font-size: 75%;
     } 
 }

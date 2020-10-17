@@ -4,7 +4,7 @@
     position: relative;
     top: 6rem;
 
-    @include respond(phone) { 
+    @media only screen and (max-width: 600px) { 
         top: 15rem;
     }
 }
@@ -12,7 +12,7 @@
 .sort-box {
     padding: 2.5rem;
 
-    @include respond(phone) { 
+    @media only screen and (max-width: 600px) { 
         padding-bottom: 5rem;
     }
 }
@@ -25,14 +25,14 @@
     background-color: white;
     outline: none;
 
-    @include respond(phone) { 
+    @media only screen and (max-width: 600px) { 
         font-size: 3.2rem;
     }
 
     &:first-child {
         margin-right: 1.2rem;
     
-        @include respond(phone) { 
+        @media only screen and (max-width: 600px) { 
             margin-right: 3rem;
         }
     }

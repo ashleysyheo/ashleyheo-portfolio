@@ -16,11 +16,6 @@
     padding: 2rem 2.5rem; 
     background-color: white;
 
-    @include respond(phone) { 
-        padding: 4rem 2.5rem; 
-        font-size: 3.5rem;
-    }
-
     & .name {
         display: inline-block;
     }
@@ -35,10 +30,15 @@
     a:hover {
         filter: blur(2px);
     }
-
 }
 
 .horizontal-line {
     border-bottom: 1px solid $black;
 }
 
+@media only screen and (max-width: 600px) { 
+    .header-menu {
+        padding: 3rem 2.5rem; 
+        font-size: 3.5rem;
+    }
+}
