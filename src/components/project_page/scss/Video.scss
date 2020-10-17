@@ -4,6 +4,10 @@
     transform: translateX(-50%);
     width: 60rem;
     outline: none;
+
+    @include respond(phone) { 
+        width: 85vw;
+    }
 }
 
 .buttons {
