@@ -76,14 +76,14 @@ const CraigslistPage = () => {
                     <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona1.png' placeholder="https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona1-small.png">
                         {(src, loading) => <img className='img margin-bottom' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Primary Persona' />}
                     </ProgressiveImage>
-                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona2-small.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona2-small.png'>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona2.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/persona2-small.png'>
                         {(src, loading) => <img className='img' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Secondary Persona' />}
                     </ProgressiveImage>
                 </div>
                     
                 <div className='heading2'>Journey Map</div>
                 <div className='content-container content-container--last'>
-                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/journey-map-small.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/journey-map-small.png'>
+                    <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/journey-map.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/craigslist-housing/journey-map-small.png'>
                         {(src, loading) => <img className='img--small' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Journey Map' />}
                     </ProgressiveImage>
                 </div>
