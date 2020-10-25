@@ -3,6 +3,7 @@
 This is my portfolio created using React and Sass. 
 
 Take a look at the live version here at [ashleysyheo.com](http://ashleysyheo.com/). 
+![Image of Ashley's Portfolio](https://ashley-project.s3.ap-northeast-2.amazonaws.com/github/ashleysyheo-preview.png)
 
 ## Run Project 
 
