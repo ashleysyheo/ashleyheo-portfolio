@@ -16,10 +16,10 @@ const IndexSort = () => {
     return (
         <div className='sort-container'>
             <div className='sort-box'>
-                <button name="list" className='sort' onClick={ displayStyle }>{ display ? '●' : '○' } list</button>
-                <button name="gallery" className='sort' onClick={ displayStyle }>{ display ? '○' : '●' } gallery</button>
+                <button name="gallery" className='sort' onClick={ displayStyle }>{ display ? '●' : '○' } gallery</button>
+                <button name="list" className='sort' onClick={ displayStyle }>{ display ? '○' : '●' } list</button>
             </div>
-            { display ? <ListView works={ state.works } /> : <GalleryView works={ state.works }/> }
+            { display ? <GalleryView works={ state.works } /> : <ListView works={ state.works }/> }
         </div>
     );
 };
