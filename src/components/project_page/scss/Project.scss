@@ -127,15 +127,15 @@
 .img {
     width: 90rem;
 
-    @include respond(phone) { 
-        width: 85vw;
-    }
-
     &--small {
         position: relative;
-        width: 85vw;
+        width: 85rem;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    @include respond(phone) { 
+        width: 85vw;
     }
 }
 
