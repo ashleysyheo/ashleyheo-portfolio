@@ -8,7 +8,7 @@ const FcBarcelonaPage = () => {
         <div>
             <div className='main' id='main'>
                 <div className='title-container'>
-                    <div className='year'>2019</div>
+                    <div className='year'>2020</div>
                     <div className='title'>FC Barcelona</div>
                 </div>
                 <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/fc-barcelona/cover.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/fc-barcelona/cover-small.png'>

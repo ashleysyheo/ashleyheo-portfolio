@@ -86,11 +86,16 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'SFProDisplay', -apple-system, Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: normal;
 }
 
 button {
     font-family: 'SFProDisplay', -apple-system, Arial, Helvetica, sans-serif;
     font-weight: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }

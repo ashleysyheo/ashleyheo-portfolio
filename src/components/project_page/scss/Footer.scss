@@ -6,8 +6,8 @@
     width: 100vw;
     border-top: 1px solid black;
     padding: 0 2.5rem;
-    margin-bottom: 2rem;
-    
+    padding-bottom: 3rem;
+
     @include respond(phone) { 
         padding-bottom: 2rem;
     }  
@@ -28,6 +28,10 @@
             display: flex;
             width: 65rem;
             justify-content: space-between;
+            
+            &:hover {
+                filter: blur(2px);
+            }
 
             @include respond(tab-land) { 
                 width: 50vw;
@@ -79,11 +83,20 @@
                 &:not(:last-child) {
                     margin-right: 2.5rem;
                 }
+
+                &:hover {
+                    filter: blur(2px);
+                }    
             }
         }
 
         .top {
             cursor: pointer;
+
+            &:hover {
+                filter: blur(2px);
+            }
+
         }
 
         .copyright {
