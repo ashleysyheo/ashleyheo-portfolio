@@ -82,7 +82,7 @@ const CodersPage = () => {
                         Then users will solve sets of interactive quizzes to code the project. <br />
                     </p>
                     <p className='text'>
-                        <a className='link' href="">View Wireframes on Figma</a>
+                        <a className='link' href="https://www.figma.com/file/w5ot0Tgzbs0FzLuWJeDqTn/10-Independent-Project-Wireframes?node-id=57%3A2">View Wireframes on Figma</a>
                     </p>
                     <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/coders/wireframe.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/coders/wireframe-small.png'>
                         {(src, loading) => <img className='img' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Wireframe' />}
@@ -116,6 +116,9 @@ const CodersPage = () => {
                     <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/coders/keyscreen4.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/coders/keyscreen4-small.png'>
                         {(src, loading) => <img className='img margin-top' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Key Screen' />}
                     </ProgressiveImage>
+                    <p className='text'>
+                        <a className='link' href="https://www.figma.com/file/CNYi0sb6qER5Cv746QFRuz/12-Independent-Project-Visual-Design?node-id=140%3A0">View Prototype on Figma</a>
+                    </p>
                 </div>
 
                 <div className='heading1 coders margin-bottom'>03 Prototype</div> 
