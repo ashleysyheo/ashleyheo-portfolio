@@ -124,7 +124,8 @@
             font-weight: 500;
 
             @include respond(phone) { 
-                font-size: 3.7rem;
+                font-size: 3.8rem;
+                line-height: 3.6rem;
             }  
         }
 
