@@ -20,6 +20,7 @@
     @include respond(phone) { 
         display: block;
         border: none;
+        top: 8rem;
         border-top: 1px solid black;
         height: unset;
     } 
@@ -88,10 +89,6 @@
         &:first-child {
             border-left: none;
         }
-
-        @include respond(tab-land) { 
-            border-left: none;
-        } 
     }
 
 }

@@ -121,11 +121,12 @@
         &-2 {
             font-size: 3rem;
             font-weight: 500;
+            
+            @include respond(phone) { 
+                font-size: 4.5rem;
+            }  
         }
 
-        @include respond(phone) { 
-            font-size: 4.5rem;
-        }  
     }
 
     
