@@ -98,7 +98,7 @@ const CodersPage = () => {
                         So the overall design of the app is kept simple. 
                     </div>
                     <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/coders/visual-design.png' placeholder='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/coders/visual-design-small.png'>
-                        {(src, loading) => <img className='img margin-bottom--small' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Visual Design' />}
+                        {(src, loading) => <img className='img margin-top' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt='Visual Design' />}
                     </ProgressiveImage>
                 </div>
 

@@ -13,9 +13,8 @@
     flex-wrap: wrap;
 
     @include respond(tab-land) {
-        height: 70rem;
         margin-bottom: 7rem;
-        top: 10.3rem;
+        top: 6.14rem;
     } 
 
     @include respond(phone) { 
