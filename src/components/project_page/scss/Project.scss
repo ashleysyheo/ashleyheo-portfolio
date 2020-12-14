@@ -115,15 +115,15 @@
         line-height: 1.3;
 
         @include respond(phone) { 
-            font-size: 3.7rem;
+            font-size: 3.2rem;
         }  
 
         &-2 {
             font-size: 3rem;
             font-weight: 500;
-            
+
             @include respond(phone) { 
-                font-size: 4.5rem;
+                font-size: 3.7rem;
             }  
         }
 
