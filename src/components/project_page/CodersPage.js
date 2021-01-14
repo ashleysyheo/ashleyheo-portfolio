@@ -124,7 +124,7 @@ const CodersPage = () => {
                 <div className='heading1 coders margin-bottom'>03 Prototype</div> 
                 <div className='content-container'>
                     <Video video={ "https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/assets/coders/prototype.mp4" } />     
-                </div>          
+                </div>
             </div>
             <Footer title={ "Craigslist Housing" } />
         </div>

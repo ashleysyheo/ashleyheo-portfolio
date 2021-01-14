@@ -6,7 +6,9 @@ import WorkContext from '../contexts/works';
 
 const IndexSort = () => {
     const state = useContext(WorkContext);
-    let selectWorks = [[0, 4], [1, 5], [2], [3, 6]];
+    // let selectWorks = [[0, 1, 7], [4, 6], [2, 3], [5, 8, 9]];
+    // let selectWorks = [[0, 4], [1, 6, 8], [2, 9], [3, 5, 7]];
+    let selectWorks = [[0, 1, 3], [4, 6], [2, 8], [5, 7, 9]];
 
     return (
         <div className='gallery-container'>

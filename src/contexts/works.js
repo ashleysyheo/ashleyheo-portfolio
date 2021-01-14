@@ -65,6 +65,30 @@ const WorkContext = createContext({ works : [
         largeImg: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/design-a-principle.png',
         smallImg: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/design-a-principle-small.png',
     },
+    {
+        year: '2020',
+        title: 'lumière:',
+        type: 'website',
+        url: 'https://lumiere.glitch.me/',
+        largeImg: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/lumiere.png',
+        smallImg: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/lumiere-small.png'
+    },
+    {
+        year: '2020',
+        title: 'untitled',
+        type: 'website',
+        url: 'https://untitled-2020.glitch.me/',
+        largeImg: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/untitled.png',
+        smallImg: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/untitled-small.png'
+    },
+    {
+        year: '2020',
+        title: 'Air Quality Tracker',
+        type: 'website, extension',
+        url: 'https://air-quality-tracker.glitch.me/',
+        largeImg: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/air-quality-tracker.png',
+        smallImg: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/air-quality-tracker-small.png'
+    }
 ]});
 
 export default WorkContext;
